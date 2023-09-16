@@ -1,0 +1,100 @@
+<!--COMPOSITION WITH YELLOW AND BLUE, 1932-->
+
+<!DOCTYPE html>
+
+<head>
+    <title>E2: Composition With Yellow and Blue</title>
+    <style>
+        body {
+            background: grey;
+        }
+
+        .painting-2 {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-rows: repeat(15, 1fr);
+            grid-template-columns: repeat(15, 1fr);
+        }
+
+        .white {
+            background: #EEEFEA;
+        }
+
+        .yellow {
+            background: #F5E31F;
+        }
+
+        .blue {
+            background: #01479F;
+        }
+
+        .border-right {
+            border-right: 11px solid #000000;
+        }
+
+        .border-bottom {
+            border-bottom: 11px solid #000000;
+        }
+
+        .section-1 {
+            grid-column: 1 / 7;
+            grid-row: 1 / 8;
+        }
+
+        .section-2 {
+            grid-column: 7 / 16;
+            grid-row: 1 / 8;
+        }
+
+        .section-3 {
+            grid-column: 1 / 7;
+            grid-row: 8 / 16;
+        }
+
+        .section-4 {
+            grid-column: 7 / 13;
+            grid-row: 8 / 15;
+        }
+
+        .section-5 {
+            grid-column: 7 /13;
+            grid-row: 15 / 16;
+        }
+
+        .section-6 {
+            grid-column: 13 /16;
+            grid-row: 8 / 13;
+        }
+
+        .section-7 {
+            grid-column: 13 /16;
+            grid-row: 13 / 16;
+        }
+
+      
+
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Recreation of Composition With Yellow and Blue, 1932 by Piet Mondrian 
+        https://www.fondationbeyeler.ch/en/beyeler-collection/work?tx_wmdbbasefbey_pi5%5Bartwork%5D=74&cHash=659f2dfe0f92a81704000dc376fb752b
+    -->
+    <div class="painting-2">
+        <div class="yellow section-1 border-right border-bottom"></div>
+        <div class="white section-2 border-bottom"></div>
+        <div class="white section-3 border-right"></div>
+        <div class="white section-4 border-right border-bottom"></div>
+        <div class="white section-5 border-right"></div>
+        <div class="blue section-6 border-bottom"></div>
+        <div class="white section-7"></div>
+        
+       
+    </div>
+</body>
+
+</html>
+
+<!-- based off code taught by Peter Ha in Interactive Media Web-->
