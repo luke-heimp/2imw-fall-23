@@ -241,7 +241,64 @@ body {
   background: FEFAE0;
   color: white;
   top: 200px;
-  left: 540px;
+  left: 553px;
+  position: absolute;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.cover {
+  width: 55px;
+  height: 70px;
+  background: white;
+  position: absolute;
+  top: 782px;
+  left: 550px;
+}
+
+.spine {
+  width: 5px;
+  height: 10px;
+  background: white;
+  position: absolute;
+  top: 772px;
+  left: 550px;
+}
+
+.backcover {
+  width: 63px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 772px;
+  left: 550px;
+}
+
+.bookback {
+  width: 5px;
+  height: 70px;
+  background: white;
+  position: absolute;
+  top: 772px;
+  left: 611px;
+}
+
+.bookback2 {
+  width: 63px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 837px;
+  left: 554px;
+}
+.box2 {
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  background: FEFAE0;
+  color: white;
+  top: 870px;
+  left: 504px;
   position: absolute;
   font-size: 20px;
   font-family: Arial;

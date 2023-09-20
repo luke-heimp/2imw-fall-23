@@ -1,238 +1,239 @@
 /* Luke Heimpel Sad Tortoise Storybook*/
 /* Shape code from https://css-tricks.com/the-shapes-of-css/ & https://learnwithparam.com/blog/how-to-draw-a-heart-using-css/*/
 
-body{
-    background: #FEFAE0; 
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    margin: 0;
+body {
+  background: #fefae0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
 }
 
-.head{
-    display: block;
-    width: 65px;
-    height: 50px;
-    background-color: #BAD04F;
-    border-radius: 90% 70% 70% 90% / 80% 80% 80% 80%;
-    position: absolute;
-    top: 416px;
-    left: 690px;
-  }
-
-.eye{
-    width: 6px;
-    height: 13px;
-    background: #283618;
-    border-radius: 6px / 5px;
-    position: absolute;
-    top: 430px;
-    left: 730px;
-  }
-
-.eye2{
-    width: 6px;
-    height: 13px;
-    background: #283618;
-    border-radius: 6px / 5px;
-    position: absolute;
-    top: 430px;
-    left: 714px;
-  }  
-
-.mouth{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    border-radius: 50%;
-    box-shadow: 0px -4px 0 0 #283618;
-    top: 452px;
-    left: 717px;
-  }
-
-.neck{
-    width: 90px;
-    height: 30px;
-    background: #BAD04F;
-    position: absolute;
-    top: 427px;
-    left: 614px;
-  } 
-
-.shell{
-    position: absolute;
-    top: 330px;
-    left: 470px;
-    width: 200px;
-    height: 150px;
-    border-radius: 100px 100px 22px 22px;
-    background: #BC6C25  
+.head {
+  display: block;
+  width: 65px;
+  height: 50px;
+  background-color: #bad04f;
+  border-radius: 90% 70% 70% 90% / 80% 80% 80% 80%;
+  position: absolute;
+  top: 416px;
+  left: 690px;
 }
 
-.foot1{
-    width: 30px;
-    height: 60px;
-    background: #BAD04F;
-    position: absolute;
-    top: 460px;
-    left: 614px; 
+.eye {
+  width: 6px;
+  height: 13px;
+  background: #283618;
+  border-radius: 6px / 5px;
+  position: absolute;
+  top: 430px;
+  left: 730px;
 }
 
-.foot2{
-    width: 30px;
-    height: 60px;
-    background: #BAD04F;
-    position: absolute;
-    top: 460px;
-    left: 500px; 
+.eye2 {
+  width: 6px;
+  height: 13px;
+  background: #283618;
+  border-radius: 6px / 5px;
+  position: absolute;
+  top: 430px;
+  left: 714px;
 }
 
-.tail{
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-right: 100px solid #BAD04F;
-    border-bottom: 5px solid transparent;
-    position: absolute;
-    top: 410px;
-    left: 430px;
-  }
+.mouth {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px -4px 0 0 #283618;
+  top: 452px;
+  left: 717px;
+}
 
-.shellspot1{
-    top: 370px;
-    left: 499px;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    background: #DDA15E;
-    border-radius: 50%
-  }
+.neck {
+  width: 90px;
+  height: 30px;
+  background: #bad04f;
+  position: absolute;
+  top: 427px;
+  left: 614px;
+}
 
-.shellspot2{
-    top: 345px;
-    left: 550px;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: #DDA15E;
-    border-radius: 50%
-  }
+.shell {
+  position: absolute;
+  top: 330px;
+  left: 470px;
+  width: 200px;
+  height: 150px;
+  border-radius: 100px 100px 22px 22px;
+  background: #bc6c25;
+}
 
-.shellspot3{
-    top: 430px;
-    left: 510px;
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background: #DDA15E;
-    border-radius: 50%
-  }
+.foot1 {
+  width: 30px;
+  height: 60px;
+  background: #bad04f;
+  position: absolute;
+  top: 460px;
+  left: 614px;
+}
+
+.foot2 {
+  width: 30px;
+  height: 60px;
+  background: #bad04f;
+  position: absolute;
+  top: 460px;
+  left: 500px;
+}
+
+.tail {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #bad04f;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  top: 410px;
+  left: 430px;
+}
+
+.shellspot1 {
+  top: 370px;
+  left: 499px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: #dda15e;
+  border-radius: 50%;
+}
+
+.shellspot2 {
+  top: 345px;
+  left: 550px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #dda15e;
+  border-radius: 50%;
+}
+
+.shellspot3 {
+  top: 430px;
+  left: 510px;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #dda15e;
+  border-radius: 50%;
+}
 
 .box {
-    display: inline-block;
-    width: 500px;
-    height: 100px;
-    background: FEFAE0;
-    color: #283618;
-    top: 200px;
-    left: 390px;
-    position: absolute;
-    font-size: 20px;
-    font-family: Arial;
-  }
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  background: FEFAE0;
+  color: #283618;
+  top: 200px;
+  left: 390px;
+  position: absolute;
+  font-size: 20px;
+  font-family: Arial;
+}
 
-.heart{
-    background-color: #DDA15E;
+.heart {
+  background-color: #dda15e;
+  width: 50px;
+  height: 50px;
+  top: 650px;
+  left: 700px;
+  position: absolute;
+  transform: rotate(45deg);
+
+  &::before,
+  &::after {
+    content: "";
     width: 50px;
     height: 50px;
-    top: 650px;
-    left: 700px;
+    background-color: #dda15e;
     position: absolute;
-    transform: rotate(45deg);
-    
-    &::before, &::after {
-      content: "";
-      width: 50px;
-      height: 50px;
-      background-color: #DDA15E;
-      position: absolute;
-      border-radius: 50%;
-    }
-    
-    &::before {
-      left: -25px;
-    }
-    
-    &::after {
-      top: -25px;
-    }
+    border-radius: 50%;
   }
 
-.sack{
-    top: 640px;
-    left: 420px;
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 70px;
-    background-color: #DDA15E;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  &::before {
+    left: -25px;
   }
 
-.sacktop{
-    top: 626px;
-    left: 435px;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 40px solid #DDA15E;
+  &::after {
+    top: -25px;
   }
+}
+
+.sack {
+  top: 640px;
+  left: 420px;
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 70px;
+  background-color: #dda15e;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.sacktop {
+  top: 626px;
+  left: 435px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 40px solid #dda15e;
+}
 
 .cover {
-    width: 55px;
-    height: 70px;
-    background: #DDA15E;
-    position: absolute;
-    top: 642px;
-    left: 554px;
+  width: 55px;
+  height: 70px;
+  background: #dda15e;
+  position: absolute;
+  top: 642px;
+  left: 554px;
 }
 
 .spine {
-    width: 5px;
-    height: 10px;
-    background: #DDA15E;
-    position: absolute;
-    top: 632px;
-    left: 554px;
+  width: 5px;
+  height: 10px;
+  background: #dda15e;
+  position: absolute;
+  top: 632px;
+  left: 554px;
 }
 
 .backcover {
-    width: 63px;
-    height: 5px;
-    background: #DDA15E;
-    position: absolute;
-    top: 632px;
-    left: 554px;
+  width: 63px;
+  height: 5px;
+  background: #dda15e;
+  position: absolute;
+  top: 632px;
+  left: 554px;
 }
 
 .bookback {
-    width: 5px;
-    height: 70px;
-    background: #DDA15E;
-    position: absolute;
-    top: 632px;
-    left: 615px;
+  width: 5px;
+  height: 70px;
+  background: #dda15e;
+  position: absolute;
+  top: 632px;
+  left: 615px;
 }
 
 .bookback2 {
-    width: 63px;
-    height: 5px;
-    background: #DDA15E;
-    position: absolute;
-    top: 697px;
-    left: 554px;
+  width: 63px;
+  height: 5px;
+  background: #dda15e;
+  position: absolute;
+  top: 697px;
+  left: 554px;
 }
 
 .box2 {
@@ -240,10 +241,10 @@ body{
   width: 10px;
   height: 10px;
   background: FEFAE0;
-  color:#a7763f;
+  color: #a7763f;
   top: 656px;
   left: 439px;
   position: absolute;
   font-size: 40px;
-    font-family: Arial;
+  font-family: Arial;
 }

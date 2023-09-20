@@ -1,8 +1,7 @@
 /* Luke Heimpel Sad Tortoise Storybook*/
 /* Shape code from https://css-tricks.com/the-shapes-of-css/ & https://learnwithparam.com/blog/how-to-draw-a-heart-using-css/*/
-
 body {
-  background: #58677b;
+  background: black;
   height: 100vh;
   display: grid;
   place-items: center;
@@ -29,7 +28,6 @@ body {
   top: 430px;
   left: 730px;
 }
-
 .eye2 {
   width: 6px;
   height: 13px;
@@ -39,7 +37,6 @@ body {
   top: 430px;
   left: 714px;
 }
-
 .mouth {
   width: 16px;
   height: 16px;
@@ -49,7 +46,6 @@ body {
   top: 452px;
   left: 717px;
 }
-
 .neck {
   width: 90px;
   height: 30px;
@@ -85,6 +81,15 @@ body {
   position: absolute;
   top: 460px;
   left: 500px;
+}
+
+.eyebrows {
+  width: 30px;
+  height: 20px;
+  background: #bad04f;
+  position: absolute;
+  top: 415xspx;
+  left: 714px;
 }
 
 .tail {
@@ -128,90 +133,109 @@ body {
   border-radius: 50%;
 }
 
-.hatbrim {
-  width: 80px;
-  height: 15px;
-  background: black;
-  position: absolute;
-  top: 405px;
-  left: 685px;
-}
-
-.hatribbon {
-  width: 50px;
-  height: 13px;
-  background: red;
-  position: absolute;
-  top: 392px;
-  left: 700px;
-}
-
-.hat {
-  width: 50px;
-  height: 67px;
-  background: black;
-  position: absolute;
-  top: 326px;
-  left: 700px;
-}
-
-.monocle {
-  top: 423px;
-  left: 702px;
+.glassesleft {
+  top: 427px;
+  left: 705px;
   border-width: 2px;
   border-color: black;
   border-style: solid;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
 }
 
-.monoclearm {
-  width: 7px;
+.glassesright {
+  top: 427px;
+  left: 726px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.nosepiece {
+  width: 4px;
   height: 3px;
   background: black;
   position: absolute;
-  top: 429px;
-  left: 697px;
+  top: 434px;
+  left: 723px;
 }
 
-.monoclestring {
-  width: 2px;
-  height: 85px;
-  background: black;
+.gradhatbottom {
+  width: 45px;
+  height: 30px;
+  background: #008cff;
   position: absolute;
-  top: 429px;
-  left: 697px;
+  top: 390px;
+  left: 702px;
 }
 
-.watchband {
-  width: 30px;
-  height: 8px;
-  background: #ffd700;
+.hat {
+  top: 350px;
+  left: 655px;
   position: absolute;
-  top: 500px;
-  left: 614px;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 30px solid #008cff;
 }
 
-.watchoutside {
-  top: 494px;
-  left: 619px;
+.hatbottom {
+  top: 380px;
+  left: 655px;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #ffd700;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 30px solid #008cff;
+}
+
+.hatshadow {
+  top: 386px;
+  left: 655px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 30px solid black;
+}
+
+.tassel {
+  width: 6px;
+  height: 40px;
+  background: #dda15e;
+  position: absolute;
+  top: 383px;
+  left: 775px;
+}
+
+.tasselball {
+  top: 420px;
+  left: 773px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #dda15e;
   border-radius: 50%;
 }
 
-.watchinside {
-  top: 498px;
-  left: 622.5px;
+.tasseltriangle {
+  top: 421px;
+  left: 770px;
   position: absolute;
-  width: 13px;
-  height: 13px;
-  background: white;
-  border-radius: 50%;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 15px solid #dda15e;
 }
 
 .arrowbody {
@@ -241,7 +265,48 @@ body {
   background: FEFAE0;
   color: white;
   top: 200px;
-  left: 540px;
+  left: 535px;
+  position: absolute;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.heart {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  top: 2000px;
+  left: 550px;
+  position: absolute;
+  transform: rotate(45deg);
+
+  &::before,
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  &::before {
+    left: -25px;
+  }
+
+  &::after {
+    top: -25px;
+  }
+}
+
+.box2 {
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  background: FEFAE0;
+  color: white;
+  top: 2240px;
+  left: 480px;
   position: absolute;
   font-size: 20px;
   font-family: Arial;

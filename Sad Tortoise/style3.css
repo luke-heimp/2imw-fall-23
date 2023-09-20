@@ -1,274 +1,272 @@
 /* Luke Heimpel Sad Tortoise Storybook*/
 /* Shape code from https://css-tricks.com/the-shapes-of-css/ & https://learnwithparam.com/blog/how-to-draw-a-heart-using-css/*/
-body{
-    background: black; 
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    margin: 0;
+body {
+  background: black;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
 }
 
-.head{
-    display: block;
-    width: 65px;
-    height: 50px;
-    background-color: #BAD04F;
-    border-radius: 90% 70% 70% 90% / 80% 80% 80% 80%;
-    position: absolute;
-    top: 416px;
-    left: 690px;
-  }
-
-.eye{
-    width: 6px;
-    height: 13px;
-    background: #283618;
-    border-radius: 6px / 5px;
-    position: absolute;
-    top: 430px;
-    left: 730px;
-  }
-.eye2{
-    width: 6px;
-    height: 13px;
-    background: #283618;
-    border-radius: 6px / 5px;
-    position: absolute;
-    top: 430px;
-    left: 714px;
-  }  
-.mouth{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    border-radius: 50%;
-    box-shadow: 0px -4px 0 0 #283618;
-    top: 452px;
-    left: 717px;
-  }
-.neck{
-    width: 90px;
-    height: 30px;
-    background: #BAD04F;
-    position: absolute;
-    top: 427px;
-    left: 614px;
-  } 
-
-.shell{
-    position: absolute;
-    top: 330px;
-    left: 470px;
-    width: 200px;
-    height: 150px;
-    border-radius: 100px 100px 22px 22px;
-    background: #BC6C25  
+.head {
+  display: block;
+  width: 65px;
+  height: 50px;
+  background-color: #bad04f;
+  border-radius: 90% 70% 70% 90% / 80% 80% 80% 80%;
+  position: absolute;
+  top: 416px;
+  left: 690px;
 }
 
-.foot1{
-    width: 30px;
-    height: 60px;
-    background: #BAD04F;
-    position: absolute;
-    top: 460px;
-    left: 614px; 
+.eye {
+  width: 6px;
+  height: 13px;
+  background: #283618;
+  border-radius: 6px / 5px;
+  position: absolute;
+  top: 430px;
+  left: 730px;
+}
+.eye2 {
+  width: 6px;
+  height: 13px;
+  background: #283618;
+  border-radius: 6px / 5px;
+  position: absolute;
+  top: 430px;
+  left: 714px;
+}
+.mouth {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px -4px 0 0 #283618;
+  top: 452px;
+  left: 717px;
+}
+.neck {
+  width: 90px;
+  height: 30px;
+  background: #bad04f;
+  position: absolute;
+  top: 427px;
+  left: 614px;
 }
 
-.foot2{
-    width: 30px;
-    height: 60px;
-    background: #BAD04F;
-    position: absolute;
-    top: 460px;
-    left: 500px; 
+.shell {
+  position: absolute;
+  top: 330px;
+  left: 470px;
+  width: 200px;
+  height: 150px;
+  border-radius: 100px 100px 22px 22px;
+  background: #bc6c25;
 }
 
-.eyebrows{
-    width: 30px;
-    height: 20px;
-    background: #BAD04F;
-    position: absolute;
-    top: 415xspx;
-    left: 714px;
+.foot1 {
+  width: 30px;
+  height: 60px;
+  background: #bad04f;
+  position: absolute;
+  top: 460px;
+  left: 614px;
 }
 
-.tail{
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-right: 100px solid #BAD04F;
-    border-bottom: 5px solid transparent;
-    position: absolute;
-    top: 410px;
-    left: 430px;
-  }
-
-.shellspot1{
-    top: 370px;
-    left: 499px;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    background: #DDA15E;
-    border-radius: 50%
-  }
-
-.shellspot2{
-    top: 345px;
-    left: 550px;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: #DDA15E;
-    border-radius: 50%
-  }
-
-.shellspot3{
-    top: 430px;
-    left: 510px;
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background: #DDA15E;
-    border-radius: 50%
+.foot2 {
+  width: 30px;
+  height: 60px;
+  background: #bad04f;
+  position: absolute;
+  top: 460px;
+  left: 500px;
 }
 
-.glassesleft{
-    top: 427px;
-    left: 705px;
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%
+.eyebrows {
+  width: 30px;
+  height: 20px;
+  background: #bad04f;
+  position: absolute;
+  top: 415xspx;
+  left: 714px;
 }
 
-.glassesright{
-    top: 427px;
-    left: 726px;
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%
+.tail {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #bad04f;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  top: 410px;
+  left: 430px;
 }
 
-.nosepiece{
-    width: 4px;
-    height: 3px;
-    background: black;
-    position: absolute;
-    top: 434px;
-    left: 723px;
-  }
+.shellspot1 {
+  top: 370px;
+  left: 499px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: #dda15e;
+  border-radius: 50%;
+}
 
-.gradhatbottom{
-    width: 45px;
-    height: 30px;
-    background: #008cff;
-    position: absolute;
-    top: 390px;
-    left: 702px; 
+.shellspot2 {
+  top: 345px;
+  left: 550px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #dda15e;
+  border-radius: 50%;
+}
+
+.shellspot3 {
+  top: 430px;
+  left: 510px;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #dda15e;
+  border-radius: 50%;
+}
+
+.glassesleft {
+  top: 427px;
+  left: 705px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.glassesright {
+  top: 427px;
+  left: 726px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.nosepiece {
+  width: 4px;
+  height: 3px;
+  background: black;
+  position: absolute;
+  top: 434px;
+  left: 723px;
+}
+
+.gradhatbottom {
+  width: 45px;
+  height: 30px;
+  background: #008cff;
+  position: absolute;
+  top: 390px;
+  left: 702px;
 }
 
 .hat {
-    top: 350px;
-    left: 655px;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-bottom: 30px solid #008cff;
-  }
-
-.hatbottom{
-    top: 380px;
-    left: 655px;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-top: 30px solid #008cff;
-    
-  }
-
-.hatshadow{
-    top: 386px;
-    left: 655px;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-top: 30px solid black;
-    
-  }
-
-.tassel{
-    width: 6px;
-    height: 40px;
-    background: #DDA15E;
-    position: absolute;
-    top: 383px;
-    left: 775px; 
-} 
-
-.tasselball{
-    top: 420px;
-    left: 773px; 
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #DDA15E;
-    border-radius: 50%
-}  
-
-.tasseltriangle{
-    top: 421px;
-    left: 770px; 
-    position: absolute; width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 15px solid #DDA15E;
-  }
-
-.arrowbody{
-    top: 150px;
-    left: 150px;
-    position: absolute;
-    width: 50px;
-    height: 20px;
-    background: white;
+  top: 350px;
+  left: 655px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 30px solid #008cff;
 }
 
-.arrowhead{
-    top: 136px;
-    left: 100px;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-right: 50px solid white;
-    border-bottom: 25px solid transparent;
-    
+.hatbottom {
+  top: 380px;
+  left: 655px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 30px solid #008cff;
+}
+
+.hatshadow {
+  top: 386px;
+  left: 655px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 30px solid black;
+}
+
+.tassel {
+  width: 6px;
+  height: 40px;
+  background: #dda15e;
+  position: absolute;
+  top: 383px;
+  left: 775px;
+}
+
+.tasselball {
+  top: 420px;
+  left: 773px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #dda15e;
+  border-radius: 50%;
+}
+
+.tasseltriangle {
+  top: 421px;
+  left: 770px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 15px solid #dda15e;
+}
+
+.arrowbody {
+  top: 150px;
+  left: 150px;
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: white;
+}
+
+.arrowhead {
+  top: 136px;
+  left: 100px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid white;
+  border-bottom: 25px solid transparent;
 }
 
 .box {
-    display: inline-block;
-    width: 500px;
-    height: 100px;
-    background: FEFAE0;
-    color: white;
-    top: 200px;
-    left: 540px;
-    position: absolute;
-    font-size: 20px;
-    font-family: Arial;
-  }
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  background: FEFAE0;
+  color: white;
+  top: 200px;
+  left: 540px;
+  position: absolute;
+  font-size: 20px;
+  font-family: Arial;
+}
