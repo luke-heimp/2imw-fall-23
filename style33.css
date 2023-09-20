@@ -311,3 +311,29 @@ body {
   font-size: 20px;
   font-family: Arial;
 }
+
+.box3 {
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  background: FEFAE0;
+  color: white;
+  top: 798px;
+  left: 400px;
+  position: absolute;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.box4 {
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  background: FEFAE0;
+  color: white;
+  top: 1350px;
+  left: 480px;
+  position: absolute;
+  font-size: 20px;
+  font-family: Arial;
+}
