@@ -55,6 +55,7 @@ body {
   color: blue;
 }
 
+/* Self-hosted font */
 @font-face {
   font-family: "Bespoke-yBqAQc5Qoa";
   src: url("fonts/Bespoke-yBqAQc5Qoa.eot");
