@@ -1,0 +1,187 @@
+/* Luke Heimpel E4 for Prof. Ha Interactive Media: Web 301*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(#3c442e, #717956);
+  font-family: Inter, sans-serif;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sideways {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align: center;
+  padding-right: 40px;
+  font-size: 1.3vw;
+}
+
+.info-section-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.info-section {
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+  color: #caccb6;
+  font-size: 16px;
+  font-family: "gopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 44px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 50vw;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: none;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10vw;
+  font-family: "mencken-std-head-narrow", sans-serif;
+  letter-spacing: 9px;
+  color: white;
+  text-shadow: 0.3vw 0.3vw #545454;
+  transition: text-shadow 750ms ease;
+}
+h1:hover {
+  text-shadow: 0.6vw 0.6vw black;
+}
+
+h3 {
+  font-family: "gopher", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #caccb6;
+}
+.yellowtext {
+  color: #f1ff3f;
+  text-shadow: 0.3vw 0.3vw #00b7ff;
+  transition: text-shadow 750ms ease;
+  font-family: "mencken-std-head", sans-serif;
+  font-style: italic;
+}
+
+.yellowtext:hover {
+  text-shadow: 0.5vw 0.5vw blue;
+}
+
+.names {
+  font-size: 1.6vw;
+  font-family: "gopher", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #caccb6;
+  padding-bottom: 4vw;
+}
+
+.yellowname {
+  font-size: 1.6vw;
+  font-family: "gopher", sans-serif;
+  font-weight: 700;
+  font-style: regular;
+  color: #f1ff3f;
+  transition: font-size 750ms ease;
+}
+
+.yellowname:hover {
+  font-size: 3vw;
+}
+.book {
+  font-size: 3vw;
+  color: #3c442e;
+  align-items: center;
+  background-color: #f1ff3f;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  transition: background-color 750ms ease;
+  transition: color 750ms ease;
+  font-family: "gopher", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.book:hover {
+  color: black;
+  background-color: #caccb6;
+}
+
+.date {
+  font-size: 2vw;
+  font-family: "gopher", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+}
+.mid {
+  display: flex;
+  width: 100%;
+  height: 20vw;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+  align-items: center;
+}
+
+h4 {
+  font-family: "gopher", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 2vw;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.question {
+  display: flex;
+  font-size: 3vw;
+  align-items: center;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "mencken-std-head-narrow", sans-serif;
+  letter-spacing: 9px;
+  color: #f1ff3f;
+  text-shadow: 0.1vw 0.1vw #545454;
+  padding-top: 6vw;
+  transition: font-size 750ms ease;
+}
+
+.question:hover {
+  font-size: 5vw;
+}
+
+.info {
+  font-size: 1.25vw;
+}
