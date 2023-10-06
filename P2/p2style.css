@@ -48,7 +48,7 @@ body {
   display: flex;
   align-items: center;
   width: 90%;
-  height: 50vw;
+  height: 45vw;
   justify-content: space-between;
   align-items: center;
   padding-top: 10%;
@@ -61,9 +61,11 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 10vw;
-  font-family: "mencken-std-head-narrow", sans-serif;
-  letter-spacing: 9px;
+  font-size: 7vw;
+  font-family: "owners-xwide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
   color: white;
   text-shadow: 0.3vw 0.3vw #545454;
   transition: text-shadow 750ms ease;
@@ -80,14 +82,15 @@ h3 {
 }
 .yellowtext {
   color: #f1ff3f;
-  text-shadow: 0.3vw 0.3vw #00b7ff;
+  text-shadow: 0.3vw 0.3vw #545454;
   transition: text-shadow 750ms ease;
-  font-family: "mencken-std-head", sans-serif;
+  font-family: "mencken-std-text", sans-serif;
+  font-weight: 400;
   font-style: italic;
 }
 
 .yellowtext:hover {
-  text-shadow: 0.5vw 0.5vw blue;
+  text-shadow: 0.5vw 0.5vw black;
 }
 
 .names {
@@ -169,8 +172,10 @@ h4 {
   font-size: 3vw;
   align-items: center;
   text-align: center;
-  font-size: 3vw;
-  font-family: "mencken-std-head-narrow", sans-serif;
+  font-size: 1.5vw;
+  font-family: "Bespoke-yBqAQc5Qoa", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   letter-spacing: 9px;
   color: #f1ff3f;
   text-shadow: 0.1vw 0.1vw #545454;
@@ -178,10 +183,35 @@ h4 {
   transition: font-size 750ms ease;
 }
 
-.question:hover {
-  font-size: 5vw;
-}
-
 .info {
   font-size: 1.25vw;
+}
+
+.free {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.info2 {
+  display: flex;
+  font-size: 2vw;
+  font-family: "owners-wide", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 4px;
+  color: white;
+  padding-right: 8vw;
+}
+
+@font-face {
+  font-family: "Bespoke-yBqAQc5Qoa";
+  src: url("fonts/Bespoke-yBqAQc5Qoa.eot");
+  src: url("fonts/Bespoke-yBqAQc5Qoa.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Bespoke-yBqAQc5Qoa.woff") format("woff"),
+    url("fonts/Bespoke-yBqAQc5Qoa.ttf") format("truetype"),
+    url("fonts/Bespoke-yBqAQc5Qoa.svg#Bespoke-yBqAQc5Qoa") format("svg");
 }
