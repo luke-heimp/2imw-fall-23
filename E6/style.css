@@ -1,18 +1,44 @@
-.hello {
+/*Luke Heimpel E6*/
+* {
+  margin: 10;
+  padding: 0;
+}
+
+.box {
   display: flex;
   align-items: center;
-  width: 90%;
-  height: 45vw;
+  width: 40vw;
+  height: 50px;
+  padding-top: 10vh;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 10%;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-bottom: none;
-  flex-direction: column;
-  font-family: "gopher", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 9vw;
+  margin: auto;
+  width: 50%;
+}
+
+.circleleft {
+  width: 9vw;
+  height: 9vw;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.circleright {
+  width: 9vw;
+  height: 9vw;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.block {
+  width: 3vw;
+  height: 3vw;
+  background-color: red;
+  position: absolute;
+  top: 30vh;
+  left: 50vw;
+}
+
+.button {
+  top: 30vh;
 }

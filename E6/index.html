@@ -1,3 +1,4 @@
+<!--Luke Heimpel E6 - Oct 18-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,18 +6,24 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Luke Heimpel" />
     <meta name="description" content="jQuery Demo" />
+    <!-- css-->
+    <link rel="stylesheet" href="style.css" />
     <!-- Jquery-->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://use.typekit.net/gll0cae.css" />
+    <!-- java-->
     <script src="script.js" async></script>
-    <link rel="stylesheet" href="style.css" />
   </head>
-  <div class="hello">
-    <p>Hello!</p>
-  </div>
-  <body></body>
+
+  <body>
+    <p>Use circle button to move box. Press space bar for box position.</p>
+    <div class="box">
+      <div class="circleleft" id="left"></div>
+      <div class="circleright" id="right"></div>
+    </div>
+    <div class="block" id="block"></div>
+  </body>
 </html>
