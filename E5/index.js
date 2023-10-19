@@ -1,4 +1,4 @@
-//Luke Heimpel E5, reference used from web-based resources
+//Luke Heimpel E5, reference used from web-based resources and ChatGPT
 let name = "Luke";
 console.log(name);
 

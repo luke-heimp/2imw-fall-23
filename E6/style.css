@@ -1,0 +1,18 @@
+.hello {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 45vw;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: none;
+  flex-direction: column;
+  font-family: "gopher", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9vw;
+}
