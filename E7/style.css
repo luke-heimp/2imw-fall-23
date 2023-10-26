@@ -1,3 +1,4 @@
+/*Luke Heimpel E7*/
 body {
   background: #f6ea14;
   height: 100vh;
@@ -17,7 +18,7 @@ img {
 
 @media (min-width: 1200px) {
   #image1 {
-    display: block;
+    display: block; /* display image 1 */
   }
   body {
     background: red;
@@ -29,7 +30,7 @@ img {
 }
 @media (max-width: 1199px) and (min-width: 1000px) {
   #image2 {
-    display: block;
+    display: block; /* display image 2 */
   }
   body {
     background: orange;
@@ -41,7 +42,7 @@ img {
 }
 @media (max-width: 999px) and (min-width: 800px) {
   #image3 {
-    display: block;
+    display: block; /* display image 3 */
   }
   body {
     background: yellow;
@@ -53,7 +54,7 @@ img {
 }
 @media (max-width: 799px) and (min-width: 600px) {
   #image4 {
-    display: block;
+    display: block; /* display image 4 */
   }
   body {
     background: green;
@@ -65,7 +66,7 @@ img {
 }
 @media (max-width: 599px) {
   #image5 {
-    display: block;
+    display: block; /* display image 5 */
   }
   body {
     background: blue;
