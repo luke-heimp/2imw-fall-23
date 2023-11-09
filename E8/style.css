@@ -1,3 +1,4 @@
+/*E8 Luke Heimpel*/
 body {
   background: darkblue;
 }
@@ -7,10 +8,18 @@ body {
   padding-top: 40px;
 }
 
-.weather {
+.weather1 {
   font-size: 30px;
   margin: 0;
   color: aliceblue;
+}
+
+.info {
+  font-size: 20px;
+  margin: 0;
+  color: aliceblue;
+  padding-bottom: 30px;
+  padding-top: 40px;
 }
 
 .temp {
@@ -18,4 +27,12 @@ body {
   margin: 0;
   color: yellow;
   font-weight: bold;
+  padding-top: 20px;
+}
+
+.icon {
+  background: lightblue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
