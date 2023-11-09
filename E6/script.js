@@ -11,9 +11,6 @@ $("#left").on("click", function () {
   $("#block").animate({ left: "-=50px" }, "slow");
 });
 
-$(document).on("keydown", function (event) {
-  if (event.which === 32) {
-    var x = $("#block").position();
-    alert("Top: " + x.top + " Left: " + x.left);
-  }
+$("#left").on("click", function () {
+  alert("Handler for `click` called.");
 });
