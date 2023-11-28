@@ -199,8 +199,8 @@ function generateProductLink(productName) {
       return "index/R3/index.html";
     case "Product 7":
       return "index/R3/index.html";
-    case "test test":
-      return "index/P37/index.html";
+    case "Snowman":
+      return "index/R5/index.html";
 
     default:
       return "#"; // Default link if product name doesn't match
@@ -233,7 +233,7 @@ $("#text").click(function () {
       opendoor.style.display = "block";
       clickbox.style.display = "block";
     });
-  }, 38000);
+  }, 37000);
 });
 $("#text").click(function () {
   setTimeout(function () {
