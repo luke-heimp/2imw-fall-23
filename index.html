@@ -1,39 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Luke's Homepage</title>
-    <link rel="icon" type="image/png" href="my_favicon.png" />
+    <title>Index</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Luke Heimpel" />
+    <meta
+      name="description"
+      content="width=device-width, initial-scale = 1.0"
+    />
+    <title>Index</title>
+
+    <!-- css-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jzz4aai.css" />
+    <!-- Jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!--icons-->
+    <script
+      src="https://kit.fontawesome.com/21e11201bc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   </head>
+
+  
   <body>
-    <h1>Hello!</h1>
-    <hr />
-    <h3><i>Welcome</i></h3>
-    <p>This is <b>Luke's Homepage</b></p>
-    <ul>
-      <li><a href="E2/Grids-Page.html">E2: Grids</a></li>
-      <li><a href="P1/tortoise2.html">P1: Storybook</a></li>
-      <li>
-        <a href="P1/tortoise-process-template.html">P1: Storybook (process)</a>
-      </li>
-      <li><a href="R1/index.html">R1: A Handmade Web</a></li>
-      <li><a href="E3/E3.html">E3: Fonts & Animation</a></li>
-      <li><a href="E4/flexbox-luke.html">E4: Flexbox</a></li>
-      <li><a href="R2/index.html">R2: What Screens Want</a></li>
-      <li><a href="P2/p2.html">P2: Poster</a></li>
-      <li><a href="P2/P2-process-luke.html">P2: Poster (process)</a></li>
-      <li><a href="E5/index.html">E5: Java</a></li>
-      <li><a href="E6/index.html">E6: Jquery</a></li>
-      <li><a href="R3/index.html">R3: Interface and Interpretation</a></li>
-      <li><a href="E7/index.html">E7: Responsiveness</a></li>
-      <li><a href="E8/index.html">E8: JSON</a></li>
-      <li><a href="R4/index.html">R4: Database as Symbolic Form</a></li>
-      <li><a href="P37/index.html">P3: Interaction</a></li>
-      <li><a href="P37/P3-process-luke.html">P3: Interaction (process)</a></li>
-      <li>
-        <a href="R5/index.html"
-          >R5: My website is a shifting house next to a river of knowledge</a
-        >
-      </li>
-    </ul>
+
+
+    <div class="shopping" id="shopping">
+    <!--Header-->
+    <header>
+      <!--Navigation-->
+      <div class="nav container">
+        <a href="#" class="logo">Lukeazon</a>
+        <!--Cart icon-->
+        <i class="fa-solid fa-cart-shopping fa-2x" id="cart-icon"></i>
+        <!--Cart-->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <!--Cart Content-->
+          <div class="cart-content">
+        </div>
+
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- Buy-->
+        <button type="button" class="btn-buy" id="btn-buy">Purchase</button>
+
+        <!--Cart close-->
+        <i class="fa-solid fa-xmark fa-xl" id="close-cart"></i>
+      </div>
+    </header>
+    <!--Shop-->
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
+      <!--Shop content-->
+      <div class="shop-content">
+        <!--Box #1-->
+        <div class="product-box">
+          <img src="img/product1.png" alt="product image" class="product-img" />
+          <h2 class="product-title">Product 1</h2>
+          <span class="price">$25.00</span>
+          <i
+            class="fa-solid fa-cart-plus fa-xl add-cart"
+            style="color: #ffffff"
+          ></i>
+        </div>
+        <!--Box #2-->
+        <div class="product-box">
+          <img src="img/product2.png" alt="product image" class="product-img" />
+          <h2 class="product-title">Product 2</h2>
+          <span class="price">$25.00</span>
+          <i
+            class="fa-solid fa-cart-plus fa-xl add-cart"
+            style="color: #ffffff"
+          ></i>
+        </div>
+        <!--Box #3-->
+        <div class="product-box">
+          <a href="https://google.com"><img src="img/product3.png" alt="product image" class="product-img" /></a>
+          <h2 class="product-title">Product 3</h2>
+          <span class="price">$25.00</span>
+          <i
+            class="fa-solid fa-cart-plus fa-xl add-cart"
+            style="color: #ffffff"
+            
+          ></i>
+        </div>
+        <!--Box #4-->
+        <div class="product-box">
+          <img src="img/product4.png" alt="product image" class="product-img" />
+          <h2 class="product-title">Product 4</h2>
+          <span class="price">$25.00</span>
+          <i
+            class="fa-solid fa-cart-plus fa-xl add-cart"
+            style="color: #ffffff"
+            
+          ></i>
+        </div>
+        <!--Box #5-->
+        <div class="product-box">
+          <img src="img/product5.png" alt="product image" class="product-img" />
+          <h2 class="product-title">Product 5</h2>
+          <span class="price">$25.00</span>
+          <i
+            class="fa-solid fa-cart-plus fa-xl add-cart"
+            style="color: #ffffff"
+            
+          ></i>
+        </div>
+        <!--Box #6-->
+        <div class="product-box">
+          <img src="img/product6.png" alt="product image" class="product-img" />
+          <h2 class="product-title">Product 6</h2>
+          <span class="price">$25.00</span>
+          <i
+            class="fa-solid fa-cart-plus fa-xl add-cart"
+            style="color: #ffffff"
+            
+          ></i>
+        </div>
+        <!--Box #7-->
+        <div class="product-box">
+          <img src="img/product7.png" alt="product image" class="product-img" />
+          <h2 class="product-title">Product 7</h2>
+          <span class="price">$25.00</span>
+          <i
+            class="fa-solid fa-cart-plus fa-xl add-cart"
+            style="color: #ffffff"
+            
+          ></i>
+        </div>
+        <!--Box #8-->
+        <div class="product-box">
+          <img src="img/product8.png" alt="product image" class="product-img" />
+          <h2 class="product-title">test</h2>
+          <span class="price">$25.00</span>
+          <i
+            class="fa-solid fa-cart-plus fa-xl add-cart"
+            style="color: #ffffff"
+          
+          ></i>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class = "cardboardbox" id="cardboardbox"></div>
+  </section>
+
+  <div class="wait" id="waitsection">
+    <div class="sky1">
+      <img src="sky.png" />
+    </div>
+    <div class="sky2">
+      <img src="sky.png" />
+    </div>
+    <div class="sky3">
+      <img src="sky.png" />
+    </div>
+    <div class="sky4">
+      <img src="sky.png" />
+    </div>
+    <div class="hall" id="hall">
+      <img src="hall.png" />
+    </div>
+    <div class="door" id="door">
+      <img src="door.png" />
+    </div>
+
+    <div class="opendoor" id="opendoor">
+      <img src="opendoor.png" />
+    </div>
+    <div class="night" id="night"></div>
+    <div class="clickbox" id="clickbox"></div>
+    <h2 id="knock">ding dong</h2>
+    <h3 id="text">wait...</h3>
+  </div>
+
+  
+  <audio id="myAudio">
+    <source src="doorbell.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!--Java-->
+  <script src="script.js"></script>
+</div>
+    
+
+
   </body>
 </html>

@@ -1,0 +1,351 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0px;
+  padding: 0;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#waitsection {
+  display: block;
+  margin-left: 0px;
+}
+
+@media (min-width: 1080px) {
+  #hall {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+  }
+
+  .door {
+    position: absolute;
+    height: auto;
+    width: 187px;
+    left: 567px;
+    top: 198px;
+    cursor: pointer;
+  }
+
+  .opendoor {
+    position: absolute;
+    height: auto;
+    width: 129.5px;
+    left: 750px;
+    top: 198px;
+  }
+
+  .sky1 {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    left: 73px;
+    top: 175px;
+  }
+  .sky2 {
+    display: none;
+  }
+
+  .sky3 {
+    display: none;
+  }
+
+  .sky4 {
+    display: none;
+  }
+
+  #text {
+    position: absolute;
+    text-align: center;
+    left: 480px;
+    font-size: 36px;
+    top: 690px;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 0.25em;
+    background: white;
+    color: black;
+    transition: color 650ms ease;
+    transition: background-color 750ms ease;
+    border: 0.3rem outset black;
+    border-radius: 17px;
+  }
+  #night {
+    position: absolute;
+    width: 1000px;
+    height: 850px;
+    background-color: navy;
+    opacity: 0;
+  }
+  .clickbox {
+    cursor: pointer;
+    position: absolute;
+    width: 107.5px;
+    height: 121px;
+    left: 605px;
+    top: 366px;
+    background-color: none;
+  }
+}
+
+@media (max-width: 1079px) and (min-width: 800px) {
+  #hall {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    height: auto;
+  }
+  .door {
+    position: absolute;
+    height: auto;
+    width: 150px;
+    left: 453px;
+    top: 158px;
+    cursor: pointer;
+  }
+
+  .sky2 {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: 48px;
+    top: 140px;
+  }
+
+  .sky1 {
+    display: none;
+  }
+
+  .sky3 {
+    display: none;
+  }
+
+  .sky4 {
+    display: none;
+  }
+
+  #text {
+    position: absolute;
+    text-align: center;
+    left: 380px;
+    font-size: 30px;
+    top: 570px;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 0.25em;
+    background: white;
+    color: black;
+    transition: color 650ms ease;
+    transition: background-color 750ms ease;
+    border: 0.3rem outset black;
+    border-radius: 17px;
+  }
+  #night {
+    position: absolute;
+    width: 800px;
+    height: 680px;
+    background-color: navy;
+    opacity: 0;
+  }
+  .opendoor {
+    position: absolute;
+    height: auto;
+    width: 103.5px;
+    left: 599px;
+    top: 158px;
+  }
+  .clickbox {
+    cursor: pointer;
+    position: absolute;
+    width: 86px;
+    height: 97px;
+    left: 484px;
+    top: 293px;
+    background-color: none;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 550px) {
+  #hall {
+    position: absolute;
+    width: 550px;
+    height: auto;
+  }
+  .door {
+    position: absolute;
+    height: auto;
+    width: 104px;
+    left: 311px;
+    top: 109px;
+    cursor: pointer;
+  }
+
+  .sky3 {
+    position: absolute;
+    width: 340px;
+    height: auto;
+    left: 35px;
+    top: 95px;
+  }
+  .sky1 {
+    display: none;
+  }
+
+  .sky2 {
+    display: none;
+  }
+
+  .sky4 {
+    display: none;
+  }
+  #text {
+    position: absolute;
+    text-align: center;
+    left: 260px;
+    font-size: 25px;
+    top: 370px;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 0.25em;
+    background: white;
+    color: black;
+    transition: color 650ms ease;
+    transition: background-color 750ms ease;
+    border: 0.3rem outset black;
+    border-radius: 17px;
+  }
+  #night {
+    position: absolute;
+    width: 550px;
+    height: 468px;
+    background-color: navy;
+    opacity: 0;
+  }
+
+  .opendoor {
+    position: absolute;
+    height: auto;
+    width: 72.5px;
+    left: 414px;
+    top: 109px;
+  }
+  .clickbox {
+    cursor: pointer;
+    position: absolute;
+    width: 59.5px;
+    height: 66px;
+    left: 332.5px;
+    top: 201.5px;
+    background-color: none;
+  }
+}
+
+@media (max-width: 549px) and (min-width: 300px) {
+  #hall {
+    position: absolute;
+    width: 300px;
+    height: auto;
+  }
+  .door {
+    position: absolute;
+    height: auto;
+    width: 56px;
+    left: 170px;
+    top: 59px;
+    cursor: pointer;
+  }
+
+  .sky4 {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    left: 22px;
+    top: 50px;
+  }
+  .sky1 {
+    display: none;
+  }
+
+  .sky2 {
+    display: none;
+  }
+
+  .sky3 {
+    display: none;
+  }
+
+  #text {
+    position: absolute;
+    text-align: center;
+    left: 130px;
+    font-size: 17px;
+    top: 205px;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 0.25em;
+    background: white;
+    color: black;
+    transition: color 650ms ease;
+    transition: background-color 750ms ease;
+    border: 0.3rem outset black;
+    border-radius: 17px;
+  }
+  #night {
+    position: absolute;
+    width: 300px;
+    height: 255px;
+    background-color: navy;
+    opacity: 0;
+  }
+
+  .opendoor {
+    position: absolute;
+    height: auto;
+    width: 39px;
+    left: 225px;
+    top: 59px;
+  }
+  .clickbox {
+    cursor: pointer;
+    position: absolute;
+    width: 32.5px;
+    height: 36px;
+    left: 181.5px;
+    top: 110px;
+    background-color: none;
+  }
+}
+
+#text:hover {
+  color: white;
+  background-color: black;
+  border: 0.3rem outset white;
+}
+
+.sky1-fade {
+  -webkit-transform: rotate(2160deg);
+  -webkit-transition-duration: 40s;
+}
+
+.sky2-fade {
+  -webkit-transform: rotate(2160deg);
+  -webkit-transition-duration: 40s;
+}
+
+.sky3-fade {
+  -webkit-transform: rotate(2160deg);
+  -webkit-transition-duration: 40s;
+}
+
+.sky4-fade {
+  -webkit-transform: rotate(2160deg);
+  -webkit-transition-duration: 40s;
+}

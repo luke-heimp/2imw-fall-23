@@ -1,5 +1,22 @@
 //https://www.youtube.com/watch?v=18Jvyp60Vbg&t=2473s
-//cart
+
+document.addEventListener("DOMContentLoaded", function () {
+  var opendoor = document.getElementById("opendoor");
+  var clickbox = document.getElementById("clickbox");
+  var waitsection = document.getElementById("waitsection");
+  var knock = document.getElementById("knock");
+  var cardboardbox = document.getElementById("cardboardbox");
+});
+
+$(document).ready(function () {
+  console.log("hello!");
+  opendoor.style.display = "none"; // Hide the div
+  clickbox.style.display = "none"; // Hide the div
+  knock.style.display = "none"; // Hide the div
+  cardboardbox.style.display = "none";
+  waitsection.style.display = "none";
+});
+
 let cartIcon = document.querySelector("#cart-icon");
 let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#close-cart");
@@ -49,11 +66,11 @@ function ready() {
 //Buy Button
 function buyButtonClicked() {
   alert("Your Order is Placed");
-  var cartContent = document.getElementsByClassName("cart-content")[0];
-  while (cartContent.hasChildNodes()) {
-    cartContent.removeChild(cartContent.firstChild);
-  }
-  updatetotal();
+  shopping.style.display = "none";
+  displayImagesInBox();
+  waitsection.style.display = "block";
+  shopping.style.display = "none";
+  cardboardbox.style.display = "none";
 }
 
 //remove Items From Cart
@@ -79,8 +96,10 @@ function addCartClicked(event) {
   var price = shopProducts.getElementsByClassName("price")[0].innerText;
   var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
   addProductToCart(title, price, productImg);
+  addProductToBox(productImg);
   updatetotal();
 }
+
 function addProductToCart(title, price, productImg) {
   var cartShopBox = document.createElement("div");
   cartShopBox.classList.add("cart-box");
@@ -92,6 +111,7 @@ function addProductToCart(title, price, productImg) {
       return;
     }
   }
+
   var cartBoxContent = `
         <img src="${productImg}" alt="product1" class="cart-img" />
         <div class="detail-box">
@@ -129,3 +149,114 @@ function updatetotal() {
 
   document.getElementsByClassName("total-price")[0].innerText = "$" + total;
 }
+
+var shopping = document.getElementById("shopping");
+
+$("#btn-buy").click(function () {
+  shopping.style.display = "none";
+});
+
+//
+function displayImagesInBox() {
+  const cardboardBox = document.querySelector(".cardboardbox");
+  const cartBoxes = document.querySelectorAll(".cart-box");
+  cardboardBox.innerHTML = "";
+
+  cartBoxes.forEach((box) => {
+    const productName = box.querySelector(".cart-product-title").innerText;
+    const productImage = box.querySelector(".cart-img");
+
+    const link = document.createElement("a");
+    link.href = generateProductLink(productName);
+    link.target = "_blank";
+
+    const imgElement = document.createElement("img");
+    imgElement.src = productImage.src;
+    imgElement.alt = "Product Image";
+    imgElement.classList.add("product-in-box");
+
+    link.appendChild(imgElement);
+    cardboardBox.appendChild(link);
+  });
+
+  cardboardBox.style.display = "flex";
+}
+
+//generate links based on the product name
+function generateProductLink(productName) {
+  switch (productName) {
+    case "Product 1":
+      return "index/R1/index.html";
+    case "Product 2":
+      return "index/R2/index.html";
+    case "Product 3":
+      return "index/R3/index.html";
+    case "Product 4":
+      return "index/R3/index.html";
+    case "Product 5":
+      return "index/R3/index.html";
+    case "Product 6":
+      return "index/R3/index.html";
+    case "Product 7":
+      return "index/R3/index.html";
+    case "test test":
+      return "index/P37/index.html";
+
+    default:
+      return "#"; // Default link if product name doesn't match
+  }
+}
+
+$("#text").on("click", function () {
+  $(".sky1").toggleClass("sky1-fade");
+  $(".sky2").toggleClass("sky2-fade");
+  $(".sky3").toggleClass("sky3-fade");
+  $(".sky4").toggleClass("sky4-fade");
+  $("#night").fadeTo(3900, 0.21);
+  $("#night").fadeTo(1930, 0);
+  $("#night").fadeTo(1560, 0.21);
+  $("#night").fadeTo(1230, 0);
+  $("#night").fadeTo(1750, 0.21);
+  $("#night").fadeTo(1510, 0);
+  $("#night").fadeTo(1810, 0.21);
+  $("#night").fadeTo(1980, 0);
+  $("#night").fadeTo(2480, 0.21);
+  $("#night").fadeTo(3180, 0);
+  $("#night").fadeTo(5020, 0.21);
+  $("#night").fadeTo(12690, 0);
+});
+
+$("#text").click(function () {
+  setTimeout(function () {
+    $("#door").click(function () {
+      $("#door").hide();
+      opendoor.style.display = "block";
+      clickbox.style.display = "block";
+    });
+  }, 38000);
+});
+$("#text").click(function () {
+  setTimeout(function () {
+    $("#night").hide();
+  }, 38000);
+});
+
+$("#text").click(function () {
+  setTimeout(function () {
+    document.getElementById("knock").style.display = "block";
+  }, 36000); // 36 seconds in milliseconds
+  setTimeout(function () {
+    document.getElementById("knock").style.display = "none";
+  }, 38000); // 36 seconds in milliseconds
+});
+
+$("#text").click(function () {
+  setTimeout(function () {
+    $("#myAudio")[0].play();
+  }, 35500); // 36 seconds in milliseconds
+});
+
+$("#clickbox").click(function () {
+  waitsection.style.display = "none";
+  cardboardbox.style.display = "block";
+});
