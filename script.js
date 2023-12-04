@@ -5,7 +5,16 @@ document.addEventListener("DOMContentLoaded", function () {
   var clickbox = document.getElementById("clickbox");
   var waitsection = document.getElementById("waitsection");
   var knock = document.getElementById("knock");
+  var hanginthere = document.getElementById("hanginthere");
+  var hanginthere = document.getElementById("hangon");
+  var transit = document.getElementById("transit");
+  var be = document.getElementById("be");
+  var your = document.getElementById("your");
   var cardboardbox = document.getElementById("cardboardbox");
+  var loading = document.getElementById("loading");
+  var draggable = $("#draggable");
+  var draggable = $("#check");
+  var windowWidth = $(window).width();
 });
 
 $(document).ready(function () {
@@ -13,8 +22,15 @@ $(document).ready(function () {
   opendoor.style.display = "none"; // Hide the div
   clickbox.style.display = "none"; // Hide the div
   knock.style.display = "none"; // Hide the div
+  hanginthere.style.display = "none"; // Hide the div
+  hangon.style.display = "none"; // Hide the div
+  transit.style.display = "none"; // Hide the div
+  be.style.display = "none"; // Hide the div
+  your.style.display = "none"; // Hide the div
   cardboardbox.style.display = "none";
   waitsection.style.display = "none";
+  check.style.display = "none";
+  loading.style.display = "none";
 });
 
 let cartIcon = document.querySelector("#cart-icon");
@@ -65,12 +81,22 @@ function ready() {
 
 //Buy Button
 function buyButtonClicked() {
-  alert("Your Order is Placed");
+  alert("Your order is being placed");
   shopping.style.display = "none";
   displayImagesInBox();
-  waitsection.style.display = "block";
   shopping.style.display = "none";
   cardboardbox.style.display = "none";
+  loading.style.display = "block";
+  $("#draggable").animate(
+    {
+      marginLeft: "+=10vw",
+    },
+    5000
+  );
+
+  setTimeout(function () {
+    document.getElementById("check").style.display = "block";
+  }, 9000);
 }
 
 //remove Items From Cart
@@ -117,7 +143,7 @@ function addProductToCart(title, price, productImg) {
         <div class="detail-box">
         <div class="cart-product-title">${title}</div>
         <div class="cart-price">${price}</div>
-        <input type="number" value="1" class="cart-quantity">
+      
         </div>
         <!--Get rid from cart-->
         <i class="fa-solid fa-trash-can cart-remove"></i>`;
@@ -130,6 +156,8 @@ function addProductToCart(title, price, productImg) {
     .getElementsByClassName("cart-quantity")[0]
     .addEventListener("change", quantityChanged);
 }
+
+//  <input type="number" value="1" class="cart-quantity">
 
 //Update Total
 function updatetotal() {
@@ -185,22 +213,44 @@ function displayImagesInBox() {
 //generate links based on the product name
 function generateProductLink(productName) {
   switch (productName) {
-    case "Product 1":
+    case "Exercise 1":
+      return "index/index.html";
+    case "Exercise 2":
+      return "index/E2/Grids-Page.html";
+    case "Exercise 3":
+      return "index/E3/E3.html";
+    case "Exercise 4":
+      return "index/E4/flexbox-luke.html";
+    case "Exercise 5":
+      return "index/E5/index.html";
+    case "Exercise 6":
+      return "index/E6/index.html";
+    case "Exercise 7":
+      return "index/E7/index.html";
+    case "Exercise 8":
+      return "index/E8/index.html";
+    case "Exercise 9":
+      return "index/E9/index.html";
+    case "Exercise 10":
+      return "index/E10/index.html";
+    case "Project 1":
+      return "index/P1/tortoise2.html";
+    case "Project 2":
+      return "index/P2/p2.html";
+    case "Project 3":
+      return "index/P37/index.html";
+    case "Reading 1":
       return "index/R1/index.html";
-    case "Product 2":
+    case "Reading 2":
       return "index/R2/index.html";
-    case "Product 3":
+    case "Reading 3":
       return "index/R3/index.html";
-    case "Product 4":
-      return "index/R3/index.html";
-    case "Product 5":
-      return "index/R3/index.html";
-    case "Product 6":
-      return "index/R3/index.html";
-    case "Product 7":
-      return "index/R3/index.html";
-    case "Snowman":
+    case "Reading 4":
+      return "index/R4/index.html";
+    case "Reading 5":
       return "index/R5/index.html";
+    case "Resources":
+      return "index/Resources/index.html";
 
     default:
       return "#"; // Default link if product name doesn't match
@@ -252,6 +302,51 @@ $("#text").click(function () {
 
 $("#text").click(function () {
   setTimeout(function () {
+    document.getElementById("hanginthere").style.display = "block";
+  }, 29000);
+  setTimeout(function () {
+    document.getElementById("hanginthere").style.display = "none";
+  }, 31000);
+});
+
+$("#text").click(function () {
+  setTimeout(function () {
+    document.getElementById("hangon").style.display = "block";
+  }, 19000);
+  setTimeout(function () {
+    document.getElementById("hangon").style.display = "none";
+  }, 22000);
+});
+
+$("#text").click(function () {
+  setTimeout(function () {
+    document.getElementById("transit").style.display = "block";
+  }, 10000);
+  setTimeout(function () {
+    document.getElementById("transit").style.display = "none";
+  }, 12000);
+});
+
+$("#text").click(function () {
+  setTimeout(function () {
+    document.getElementById("be").style.display = "block";
+  }, 24000);
+  setTimeout(function () {
+    document.getElementById("be").style.display = "none";
+  }, 27000);
+});
+
+$("#text").click(function () {
+  setTimeout(function () {
+    document.getElementById("your").style.display = "block";
+  }, 4000);
+  setTimeout(function () {
+    document.getElementById("your").style.display = "none";
+  }, 9000);
+});
+
+$("#text").click(function () {
+  setTimeout(function () {
     $("#myAudio")[0].play();
   }, 35500); // 36 seconds in milliseconds
 });
@@ -259,4 +354,26 @@ $("#text").click(function () {
 $("#clickbox").click(function () {
   waitsection.style.display = "none";
   cardboardbox.style.display = "block";
+  document.body.style.backgroundColor = "#B0E0E6";
+});
+
+$(document).ready(function () {
+  var draggable = $("#draggable");
+  var windowWidth = $(window).width();
+
+  draggable.draggable({
+    axis: "x",
+    drag: function () {
+      var position = draggable.position().left;
+      var divWidth = draggable.width();
+      var currentPosition = position + divWidth;
+
+      // Check if the div crosses 75% of the window width
+      if ((currentPosition / windowWidth) * 100 > 70) {
+        waitsection.style.display = "block";
+        loading.style.display = "none";
+      } else {
+      }
+    },
+  });
 });

@@ -179,6 +179,7 @@ header {
 
 .shop {
   margin-top: 4rem;
+  padding-bottom: 150px;
 }
 
 /*Shop Content*/
@@ -261,25 +262,6 @@ header {
   .cart {
     width: 280px;
   }
-}
-
-.cardboardbox {
-  margin: 10%;
-  background-image: url("img/texture.jpg");
-  color: saddlebrown;
-  min-height: 200px; /* Adjust as needed */
-  width: 80vw;
-  flex-wrap: wrap; /* Allows images to wrap within the box */
-  padding: 20px;
-  border: 9px solid peru;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.cardboardbox img {
-  max-width: 200px; /* Adjust the size of the displayed images */
-  margin: 5px; /* Add some spacing between images */
 }
 
 #waitsection {
@@ -377,6 +359,71 @@ header {
       font-weight: 900;
       color: white;
     }
+
+    #hanginthere {
+      position: absolute;
+      text-align: center;
+      margin-left: 300px;
+      font-size: 19px;
+      top: 400px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+
+    #hangon {
+      position: absolute;
+      text-align: center;
+      margin-left: 300px;
+      font-size: 19px;
+      top: 400px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+      margin-left: 500px;
+    }
+    #transit {
+      position: absolute;
+      text-align: center;
+      margin-left: 300px;
+      font-size: 19px;
+      top: 400px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+      margin-left: 500px;
+    }
+
+    #be {
+      position: absolute;
+      text-align: center;
+      margin-left: 300px;
+      font-size: 19px;
+      top: 400px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+    #your {
+      position: absolute;
+      text-align: center;
+      margin-left: 300px;
+      font-size: 19px;
+      top: 400px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
   }
 }
 
@@ -470,6 +517,63 @@ header {
       top: 180px;
       font-weight: 900;
       color: white;
+      padding: 1rem;
+    }
+    #hanginthere {
+      position: absolute;
+      font-size: 18px;
+      top: 200px;
+      font-weight: 900;
+      margin-left: 300px;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+    #hangon {
+      position: absolute;
+      font-size: 18px;
+      top: 200px;
+      font-weight: 900;
+      margin-left: 300px;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+    #transit {
+      position: absolute;
+      font-size: 18px;
+      top: 200px;
+      font-weight: 900;
+      margin-left: 300px;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+
+    #be {
+      position: absolute;
+      font-size: 18px;
+      top: 200px;
+      font-weight: 900;
+      margin-left: 300px;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+    #your {
+      position: absolute;
+      font-size: 18px;
+      top: 200px;
+      font-weight: 900;
+      margin-left: 300px;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
     }
   }
 }
@@ -563,6 +667,63 @@ header {
       top: 127px;
       font-weight: 900;
       color: white;
+    }
+    #hanginthere {
+      position: absolute;
+      margin-left: 200px;
+      font-size: 14px;
+      top: 250px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+    #hangon {
+      position: absolute;
+      margin-left: 200px;
+      font-size: 14px;
+      top: 250px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+
+    #transit {
+      position: absolute;
+      margin-left: 200px;
+      font-size: 14px;
+      top: 250px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+    #be {
+      position: absolute;
+      margin-left: 200px;
+      font-size: 14px;
+      top: 250px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+
+    #your {
+      position: absolute;
+      margin-left: 200px;
+      font-size: 14px;
+      top: 250px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
     }
   }
 }
@@ -658,6 +819,69 @@ header {
       font-weight: 900;
       color: white;
     }
+
+    #hanginthere {
+      position: absolute;
+      text-align: center;
+      margin-left: 100px;
+      font-size: 9px;
+      top: 150px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+    #hangon {
+      position: absolute;
+      text-align: center;
+      margin-left: 100px;
+      font-size: 9px;
+      top: 150px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+
+    #transit {
+      position: absolute;
+      text-align: center;
+      margin-left: 100px;
+      font-size: 9px;
+      top: 150px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+    #be {
+      position: absolute;
+      text-align: center;
+      margin-left: 100px;
+      font-size: 9px;
+      top: 150px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
+
+    #your {
+      position: absolute;
+      text-align: center;
+      margin-left: 100px;
+      font-size: 9px;
+      top: 150px;
+      font-weight: 900;
+      color: white;
+      background-color: black;
+      border: 0.3rem;
+      padding: 1rem;
+    }
   }
 }
 
@@ -714,4 +938,139 @@ header {
 .sky4-fade {
   -webkit-transform: rotate(2160deg);
   -webkit-transition-duration: 40s;
+}
+.cardboardbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+  background-image: url("img/texture.jpg");
+  color: saddlebrown;
+  min-height: 200px; /* Adjust as needed */
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows images to wrap within the box */
+  padding: 20px;
+  border: 9px solid peru;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 3000px) and (min-width: 801px) {
+  .cardboardbox img {
+    max-width: 27%; /* Adjust the size of the displayed images */
+    margin: 2.5%; /* Add some spacing between images */
+  }
+}
+
+@media (max-width: 800px) and (min-width: 651px) {
+  .cardboardbox img {
+    max-width: 42%; /* Adjust the size of the displayed images */
+    margin: 2.5%; /* Add some spacing between images */
+  }
+}
+
+@media (max-width: 650px) and (min-width: 1px) {
+  .cardboardbox img {
+    margin: 2.5%; /* Add some spacing between images */
+  }
+}
+
+#draggable {
+  background-color: grey;
+  height: 5%;
+  width: 2000px;
+  top: 50%;
+  left: -90%;
+  position: absolute;
+  cursor: move;
+  float: right;
+  width: 100%; /* Adjust width as needed */
+}
+
+.waitingbox {
+  position: absolute;
+  float: left;
+  width: 80%; /* Adjust width as needed */
+  border: solid grey;
+  height: 7%;
+  width: 75%;
+  top: 49%;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.loading {
+  width: 100%;
+  overflow: hidden; /* Clear the floats */
+}
+
+.blocker1 {
+  height: 100vh;
+  background-color: white;
+  width: 15%;
+  left: 0px;
+  position: absolute;
+}
+.blocker2 {
+  height: 100vh;
+  background-color: white;
+  width: 20%;
+  left: 80%;
+  position: absolute;
+}
+
+.waitingbox2 {
+  position: absolute;
+  width: 80%; /* Adjust width as needed */
+  border: solid grey;
+  height: 7%;
+  width: 0.1%;
+  top: 49%;
+  left: 4.9%;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.waitingbox3 {
+  position: absolute;
+  width: 80%; /* Adjust width as needed */
+  border: solid grey;
+  height: 7%;
+  width: 0.1%;
+  top: 49%;
+  left: 69.9%;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.processing {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 40vh;
+  color: grey;
+}
+
+#loadingGif {
+  width: 6%;
+  margin-left: 47%;
+  margin-top: 19vh;
+}
+
+#check {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: grey;
+  padding-top: 1vh;
 }
