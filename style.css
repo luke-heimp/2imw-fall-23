@@ -1,3 +1,5 @@
+/*Luke Heimpel index*/
+
 * {
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
@@ -946,12 +948,12 @@ header {
   margin: 10%;
   background-image: url("img/texture.jpg");
   color: saddlebrown;
-  min-height: 200px; /* Adjust as needed */
+  min-height: 200px;
   width: 80vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Allows images to wrap within the box */
+  flex-wrap: wrap;
   padding: 20px;
   border: 9px solid peru;
   flex-wrap: wrap;
@@ -959,21 +961,21 @@ header {
 
 @media (max-width: 3000px) and (min-width: 801px) {
   .cardboardbox img {
-    max-width: 27%; /* Adjust the size of the displayed images */
-    margin: 2.5%; /* Add some spacing between images */
+    max-width: 27%;
+    margin: 2.5%;
   }
 }
 
 @media (max-width: 800px) and (min-width: 651px) {
   .cardboardbox img {
-    max-width: 42%; /* Adjust the size of the displayed images */
-    margin: 2.5%; /* Add some spacing between images */
+    max-width: 42%;
+    margin: 2.5%;
   }
 }
 
 @media (max-width: 650px) and (min-width: 1px) {
   .cardboardbox img {
-    margin: 2.5%; /* Add some spacing between images */
+    margin: 2.5%;
   }
 }
 
@@ -986,13 +988,13 @@ header {
   position: absolute;
   cursor: move;
   float: right;
-  width: 100%; /* Adjust width as needed */
+  width: 100%;
 }
 
 .waitingbox {
   position: absolute;
   float: left;
-  width: 80%; /* Adjust width as needed */
+  width: 80%;
   border: solid grey;
   height: 7%;
   width: 75%;
@@ -1004,7 +1006,7 @@ header {
 
 .loading {
   width: 100%;
-  overflow: hidden; /* Clear the floats */
+  overflow: hidden;
 }
 
 .blocker1 {
@@ -1024,7 +1026,7 @@ header {
 
 .waitingbox2 {
   position: absolute;
-  width: 80%; /* Adjust width as needed */
+  width: 80%;
   border: solid grey;
   height: 7%;
   width: 0.1%;
@@ -1040,7 +1042,7 @@ header {
 
 .waitingbox3 {
   position: absolute;
-  width: 80%; /* Adjust width as needed */
+  width: 80%;
   border: solid grey;
   height: 7%;
   width: 0.1%;

@@ -1,4 +1,5 @@
-//https://www.youtube.com/watch?v=18Jvyp60Vbg&t=2473s
+//Luke Heimpel Index
+//E-Commerce based on this tutorial https://www.youtube.com/watch?v=18Jvyp60Vbg&t=2473s
 
 document.addEventListener("DOMContentLoaded", function () {
   var opendoor = document.getElementById("opendoor");
@@ -19,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 $(document).ready(function () {
   console.log("hello!");
-  opendoor.style.display = "none"; // Hide the div
-  clickbox.style.display = "none"; // Hide the div
-  knock.style.display = "none"; // Hide the div
-  hanginthere.style.display = "none"; // Hide the div
-  hangon.style.display = "none"; // Hide the div
-  transit.style.display = "none"; // Hide the div
-  be.style.display = "none"; // Hide the div
-  your.style.display = "none"; // Hide the div
+  opendoor.style.display = "none";
+  clickbox.style.display = "none";
+  knock.style.display = "none";
+  hanginthere.style.display = "none";
+  hangon.style.display = "none";
+  transit.style.display = "none";
+  be.style.display = "none";
+  your.style.display = "none";
   cardboardbox.style.display = "none";
   waitsection.style.display = "none";
   check.style.display = "none";
@@ -157,8 +158,6 @@ function addProductToCart(title, price, productImg) {
     .addEventListener("change", quantityChanged);
 }
 
-//  <input type="number" value="1" class="cart-quantity">
-
 //Update Total
 function updatetotal() {
   var cartContent = document.getElementsByClassName("cart-content")[0];
@@ -255,7 +254,7 @@ function generateProductLink(productName) {
       return "index/Process/index.html";
 
     default:
-      return "#"; // Default link if product name doesn't match
+      return "#";
   }
 }
 
@@ -296,10 +295,10 @@ $("#text").click(function () {
 $("#text").click(function () {
   setTimeout(function () {
     document.getElementById("knock").style.display = "block";
-  }, 36000); // 36 seconds in milliseconds
+  }, 36000);
   setTimeout(function () {
     document.getElementById("knock").style.display = "none";
-  }, 38000); // 36 seconds in milliseconds
+  }, 38000);
 });
 
 $("#text").click(function () {
@@ -350,7 +349,7 @@ $("#text").click(function () {
 $("#text").click(function () {
   setTimeout(function () {
     $("#myAudio")[0].play();
-  }, 35500); // 36 seconds in milliseconds
+  }, 35500);
 });
 
 $("#clickbox").click(function () {
@@ -370,7 +369,6 @@ $(document).ready(function () {
       var divWidth = draggable.width();
       var currentPosition = position + divWidth;
 
-      // Check if the div crosses 75% of the window width
       if ((currentPosition / windowWidth) * 100 > 70) {
         waitsection.style.display = "block";
         loading.style.display = "none";
