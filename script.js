@@ -251,6 +251,8 @@ function generateProductLink(productName) {
       return "index/R5/index.html";
     case "Resources":
       return "index/Resources/index.html";
+    case "Process Docs":
+      return "index/Process/index.html";
 
     default:
       return "#"; // Default link if product name doesn't match

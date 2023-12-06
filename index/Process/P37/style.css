@@ -1,0 +1,82 @@
+/*Luke Heimpel P3 - Nov 2023*/
+* {
+  margin: 100;
+  padding: 0;
+}
+
+body {
+  background-color: palegoldenrod;
+}
+
+.body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  height: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.circleleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.ui-widget-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "bilo", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  user-select: none;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin: 0;
+  padding-right: 90000px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chair {
+  background-color: transparent;
+}
+
+.reset {
+  color: white;
+  font-family: "bilo", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: transparent;
+  padding-bottom: 4px;
+  user-select: none;
+}

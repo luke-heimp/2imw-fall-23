@@ -1,0 +1,22 @@
+.images {
+  position: relative;
+}
+.img1 {
+  position: absolute;
+}
+
+.img2 {
+  position: absolute;
+}
+
+.img3 {
+  position: absolute;
+}
+
+.longbox {
+  background-color: aqua;
+  height: 300px;
+  width: 900px;
+  top: 800px;
+  position: absolute;
+}

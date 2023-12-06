@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-zoom:1.0">
+  	<meta charset="utf-8">
+    <title>Interaction Process</title>
+    <style>
+        /* Move all CSS to a stylesheet */
+        * { /* Remove default browser spacing */
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 100px; /* Add spacing around the entire page */ 
+            font-size: 12px; /* Setting baseline font size */ 
+        }
+
+        /* Start of text sizes */
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+        figcaption {
+            font-size: 1.25em;
+        }
+        /* End of text sizes */
+
+        /* Start of spacing and layout */
+        h2, p, figure, figcaption {
+            margin-bottom: 40px;
+        }
+        img {
+            margin-bottom: 10px;
+        }
+        .process-template {
+            width: 40%; /* Set the width of the template to 60% of the viewport. */
+            margin: auto; /* Center align the template by adding auto margins to the left and right */
+        }
+        .title {
+            margin-bottom: 100px; /* Add spacing to the bottom of the title div */
+        }
+
+        .section {
+            margin-bottom: 100px;
+        }
+        /* End of spacing and layout */
+
+        /* Adding media queries for page to adapts to tablet and mobile devices */
+        @media (max-width: 991px) {
+            .process-template {
+                width: 60%;
+            }
+        }
+
+        @media (max-width:767px) {
+            body {
+                margin: 40px;
+                font-size: 10px;
+            }
+            .process-template {
+                width: 100%;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="process-template">
+        <!-- Start of title -->
+        <div class="title">
+            <h1>Luke Heimpel P3: Interaction Process</h1>
+        </div>
+        <!-- End of title -->
+        <!-- Start of content -->
+        <div class="content">
+            <!-- Start of a section -->
+            <div class="section">
+                <h2>Original Idea</h2>
+                <figure>
+                    <img src="carsketch.jpg" alt="original-car-layout" width="100%">
+                    <figcaption>Sketch for original drag interaction idea</figcaption>
+                  </figure>
+                <p>
+                    The interaction element selected for me was the idea of drag. After doing some research and looking at the examples provided I decided on making an interaction based on horizontal dragging. My plan was to simulate depth by using a multilayered stack of images which would each interact differently when dragged. The dragging would see a little car take a journey through scenery. The effect was meant to emulate the parallax seen in animated films and video games. I liked this idea, but after speaking with Peter I came to the understanding that it didn’t take full advantage of the idea of dragging. This project would have been more suited to scrolling. So it was back to the drawing board. 
+                </p>
+                <a href="1/index.html"><p>Orginal prototype</p></a> </li>
+                <!-- Start of a section -->
+               
+               
+                  <h2>New Idea</h2>
+                <figure>
+                    <img src="sketch.jpg" alt="original-landingpage-layout" width="100%">
+                    <figcaption>Sketch for interaction</figcaption>
+                  </figure>
+                  <p>	After more research and consideration I came up with a new focus for my drag interaction. I wanted to create an experience where a viewer could drag blocks around and stack them. To accomplish this I researched different physics engines that work with javascript. I found one called Matter.JS. I followed many little tutorials and made experimental projects to learn the software. </p>
+                  <a href="2/index.html"><p>Matter.js experiment 1</p></a> </li>
+                  <a href="3/index.html"><p>Matter.js experiment 2</p></a> </li>
+                  <a href="4/index.html"><p>Matter.js experiment 3</p></a> </li>
+                  <p>
+                    My experiments helped me come to grips with this challenging engine. A Matter.js feature that I really enjoyed playing with was called Stack. Stack allows the user to define a polygon and continually stack it in a rectangle of any dimensions. I had so much fun playing with the interaction of stack with the physics of the engine that I decided to focus my project on destroying and dragging the elements of a stack.
+                    I built a narrative around the idea that a kitchen table is full of dirt that must be swept away. Sweeping is a real-world form of dragging so it translates well into a digital form. I also designed surfaces for the dirt stack to collide with (a turkey, a bottle of wine, and a gravy boat). The environment is also interactive with the dirt physics. I designed the kitchen background and all of the assets using Illustrator and mapped them as sprites onto my physics objects. The result is a lighthearted game that uses full advantage of the drag interaction.
+                    I learned a lot from the process of integrating an engine into my project. The process saw a lot of trial and error, but in the end, I was able to make it all work.                      
+                </p>
+                <figure>
+                    <a href="index.html"><h2>Drag Interaction</h2></a> </li>
+                <img src="P3.jpg" alt="interaction page" width="100%">
+                <figcaption>Drag interaction</figcaption>
+            </figure>
+            </div>
+       <div>
+        <h2>Assets</h2>
+         <figure>
+                <img src="kitchen.png" alt="background" width="100%">
+                <figcaption>Engine kitchen background</figcaption>
+            </figure>
+            <figure>
+                <img src="turkey.png" alt="turkey" width="100%">
+                <figcaption>Turkey asset</figcaption>
+            </figure>
+            <figure>
+                <img src="wine.png" alt="turkey" width="25%">
+                <figcaption>Wine bottle asset</figcaption>
+            </figure>
+            <figure>
+                <img src="gravy.png" alt="gravy" width="100%">
+                <figcaption>Gravy boat asset</figcaption>
+            </figure>
+            <figure>
+                <img src="broom.png" alt="broom" width="100%">
+                <figcaption>Broom asset</figcaption>
+            </figure>
+            <figure>
+                <img src="dirt.jpg" alt="dirt" width="100%">
+                <figcaption>Dirt sprite</figcaption>
+            </figure>
+       </div>
+
+            <!-- End of a section -->
+            <!-- Start of a new section -->
+            <div class="section">
+                <h2>Resources</h2>
+                <ul><li><a href="https://brm.io/matter-js/">https://brm.io/matter-js/</a></li>
+                <li><a href="https://www.codebrainer.com/blog/learn-matterjs-with-examples"> https://www.codebrainer.com/blog/learn-matterjs-with-examples</a></li>
+                <li><a href="https://www.codebrainer.com/blog/learn-matterjs-with-examples"> https://www.codebrainer.com/blog/learn-matterjs-with-examples</a></li>
+                    <li><a href="https://medium.com/@michaelsmykowski/balling-with-matter-js-ff567d2eabf4">https://medium.com/@michaelsmykowski/balling-with-matter-js-ff567d2eabf4</a></li>
+                    <li><a href="https://thecodingtrain.com/tracks/the-nature-of-code-2/noc/6-physics-libraries/1-matterjs-introduction">https://thecodingtrain.com/tracks/the-nature-of-code-2/noc/6-physics-libraries/1-matterjs-introduction</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=PsL3iI61wl8&t=299s">https://www.youtube.com/watch?v=PsL3iI61wl8&t=299s</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=9T8BVJRHzsQ">https://www.youtube.com/watch?v=9T8BVJRHzsQ</a></li>
+                    </ul>
+        <!-- End of content -->
+    </div>
+  </body>
+</html>
